@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>¡Haz una reserva!</title>
+	<link rel="icon" href="icon.png">
+	<style>
+		body {
+        	font-family: oswald,
+        	sans-serif;
+               }
+         h1 {
+        	color: white;
+        	font-family: oswald,
+        	sans-serif;
+        	text-align: center;
+        	font-size: 100px;
+        	background-color: #0A0A0A
+                }
+
+         footer {
+			color:white;
+			background-color: #0A0A0A;
+			text-align: center;
+			font-size: 25px;
+		        }
+
+	</style>
+</head>
+<body>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+<h1> KEO </h1>
+<h2> Haz tu reserva ONLINE </h2>
+<section>
+	<article>
+		<form method="post">
+		  <fieldset>
+		 	<legend>Datos del usuario</legend>
+
+			<input type="text" placeholder="Nombre" value="" required=""> <br>
+			<input type="text" placeholder="Apellido" value="" required=""> <br>
+			<input type="email" placeholder="Email" value="" required=""> <br>
+			<input type="tel" placeholder="Telefono" value="" required=""> <br>
+
+		  </fieldset>
+
+		  <fieldset>
+		 	<legend>Datos de la reserva</legend>
+
+			<p> Fecha de reserva </p> 
+			<input type="date" placeholder="Ingrese aqui" value="Fecha de reserva" required="">
+			<p> Hora de la reserva </p>
+			<input type="time" placeholder="Ingrese aqui" value="Hora de la reserva" required=""> <br>
+			<p> Cantidad de adultos </p>
+			<input type="number" placeholder="Ingrese aqui" value="Cantidad de aultos" required=""> <br>
+			<p> Cantidad de niños </p>
+			<input type="number" placeholder="Ingrese aqui" value="Cantidad de niños" required=""> <br>
+		  </fieldset>
+		</form>
+	</article>
+</section>
+<button onclick="redireccionar()">Confirma reserva</button>
+    
+    <script>
+        function redireccionar() {
+            window.location.href = "confirmaciondereserva.html";
+        }
+    </script>
+    <br>
+    <a href="index.html"> Volver al inicio </a>
+
+    <footer> 
+	  <p>
+ 		 &copy; 2023 Todos los derechos reservados - KEO
+ 	  </p>
+</footer>
+</body>
+</html>
